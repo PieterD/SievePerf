@@ -185,7 +185,7 @@ func sieve3(max uint64) []uint64 {
 }
 
 // This one uses a wheel sieve to avoid all numbers divisible by the first
-// num digits.
+// num primes.
 func sivbuild(num int) (uint64, uint64, []uint64, []byte) {
 	// The size of the wheel is exponential. Anything more than 10 primes
 	// will create an enormous wheel; try 7.
